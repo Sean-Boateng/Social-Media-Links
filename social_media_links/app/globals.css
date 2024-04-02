@@ -2,32 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+
+body {
+  background-color:hsl(0, 0%, 8%) ;
+}
+
+.pic{
+  border-radius: 50%;
+}
+
+.name{
+  color: hsl(0, 0%, 100%);
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
+}
+.location{
+  color: hsl(75, 94%, 57%);
+  font-size:  0.875rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: 1.7rem;
+}
+
+.bio{
+  color: hsl(0, 0%, 100%);
+  font-size:  0.875rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  background-color: hsl(0, 0%, 20%);
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-align: center;
+  width: 17rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  align-content: center;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.green-hover {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.green-hover:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+}
+@media (prefers-color-scheme: dark) {
+  .rectangle {
+    display: inline-block;
+    min-width: 23.125rem; /* Set a minimum width */
+    min-height:  3.125rem; /* Set a minimum height */
+    /* border: 1px solid black; */
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(0, 0%, 12%);
+  }
+}
+
+
+
+
