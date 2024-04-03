@@ -19,11 +19,11 @@ export default function Home() {
           "Front-end developer and avid reader."
         </div>
         <div className="button-container">
-          <a href="#" className="green-hover button">GitHub</a>
-          <a href="#" className="green-hover button">Frontend Mentor</a>
-          <a href="#" className="green-hover button">LinkedIn</a>
-          <a href="#" className="green-hover button">Twitter</a>
-          <a href="#" className="green-hover button">Instagram</a>
+          <a href={process.env.API_Github} className="green-hover button">GitHub</a>
+          <a href={process.env.API_FMentor} className="green-hover button">Frontend Mentor</a>
+          <a href={process.env.API_LinkedIn} className="green-hover button">LinkedIn</a>
+          <a href={process.env.API_Twitter} className="green-hover button">Twitter</a>
+          <a href={process.env.API_Insta} className="green-hover button">Instagram</a>
         </div>
       </div>
     </main>
