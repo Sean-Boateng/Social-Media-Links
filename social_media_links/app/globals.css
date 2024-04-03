@@ -77,7 +77,37 @@ body {
   background-color: hsl(75, 94%, 57%);
   color: hsl(0, 0%, 12%);
 }
-@media (prefers-color-scheme: dark) {
+
+.rectangle {
+  display: inline-block;
+  min-width: 23.125rem; /* Set a minimum width */
+  min-height:  3.125rem; /* Set a minimum height */
+  /* border: 1px solid black; */
+  padding: 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0, 0%, 12%);
+}
+
+
+@media (max-width: 768px) {
+  .rectangle {
+    display: inline-block;
+    min-width: 22.125rem; /* Set a minimum width */
+    min-height:  3.125rem; /* Set a minimum height */
+    /* border: 1px solid black; */
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(0, 0%, 12%);
+  }
+  
+}
+
+
+@media (min-width: 769px) {
   .rectangle {
     display: inline-block;
     min-width: 23.125rem; /* Set a minimum width */
@@ -89,8 +119,5 @@ body {
     justify-content: center;
     background-color: hsl(0, 0%, 12%);
   }
+  
 }
-
-
-
-
