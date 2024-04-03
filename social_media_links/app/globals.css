@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-} */
+
 
 @layer utilities {
   .text-balance {
@@ -80,9 +76,8 @@ body {
 
 .rectangle {
   display: inline-block;
-  min-width: 23.125rem; /* Set a minimum width */
-  min-height:  3.125rem; /* Set a minimum height */
-  /* border: 1px solid black; */
+  min-width: 23.125rem; 
+  min-height:  3.125rem; 
   padding: 10px; 
   display: flex;
   flex-direction: column;
@@ -94,9 +89,8 @@ body {
 @media (max-width: 768px) {
   .rectangle {
     display: inline-block;
-    min-width: 22.125rem; /* Set a minimum width */
-    min-height:  3.125rem; /* Set a minimum height */
-    /* border: 1px solid black; */
+    min-width: 22.125rem;
+    min-height:  3.125rem; 
     padding: 10px; 
     display: flex;
     flex-direction: column;
@@ -110,9 +104,8 @@ body {
 @media (min-width: 769px) {
   .rectangle {
     display: inline-block;
-    min-width: 23.125rem; /* Set a minimum width */
-    min-height:  3.125rem; /* Set a minimum height */
-    /* border: 1px solid black; */
+    min-width: 23.125rem; 
+    min-height:  3.125rem; 
     padding: 10px; 
     display: flex;
     flex-direction: column;
